@@ -1,0 +1,158 @@
+{
+  "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
+  "Version": "2.1.0.0",
+  "Type": "Scene",
+  "Name": "MainScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "PrePosition": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "PreSize": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "RightMargin": -640.0,
+        "TopMargin": -960.0,
+        "Children": [
+          {
+            "SingleColor": {},
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "Tag": 4,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Children": [
+              {
+                "FontSize": 36,
+                "ButtonText": "Start Game",
+                "TextColor": {
+                  "R": 65,
+                  "G": 65,
+                  "B": 70
+                },
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "assets/img/buttonDefault.png"
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "assets/img/buttonDefault.png"
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "assets/img/buttonDefault.png"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 12,
+                "Scale9OriginY": 12,
+                "Scale9Width": 166,
+                "Scale9Height": 25,
+                "TouchEnable": true,
+                "Tag": 6,
+                "PrePosition": {
+                  "X": 0.4875,
+                  "Y": 0.163020834
+                },
+                "PreSize": {
+                  "X": 0.328125,
+                  "Y": 0.0510416664
+                },
+                "LeftMargin": 207.0,
+                "RightMargin": 223.0,
+                "TopMargin": 779.0,
+                "BottomMargin": 132.0,
+                "ActionTag": 987561726,
+                "Position": {
+                  "X": 312.0,
+                  "Y": 156.5
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 210.0,
+                  "Y": 49.0
+                },
+                "FrameEvent": "",
+                "Name": "btn_start",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": -518155233,
+            "Position": {
+              "X": 320.0,
+              "Y": 480.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "FrameEvent": "",
+            "Name": "Panel_1",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Scale": {
+          "ScaleX": 1.0,
+          "ScaleY": 1.0
+        },
+        "AnchorPoint": {},
+        "CColor": {},
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "FrameEvent": "",
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  }
+}
