@@ -30,7 +30,7 @@
                 <PrePosition X="0.5000" Y="0.3333" />
                 <PreSize X="0.9688" Y="0.6458" />
                 <Children>
-                  <NodeObjectData Name="board" ActionTag="-1562104449" FrameEvent="" Tag="9" ObjectIndex="4" LeftMargin="9.9998" RightMargin="10.0002" TopMargin="10.0000" BottomMargin="10.0000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+                  <NodeObjectData Name="board" ActionTag="-1562104449" FrameEvent="" Tag="9" ObjectIndex="4" LeftMargin="9.9998" RightMargin="10.0002" TopMargin="10.0000" BottomMargin="10.0000" TouchEnable="True" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
                     <Position X="309.9998" Y="310.0000" />
                     <Scale ScaleX="1.0000" ScaleY="1.0000" />
                     <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
