@@ -13,7 +13,7 @@ var MiniGame = cc.Node.extend({
   createBoard:function() {
       for (var y=0; y<5; y++) {
         for (var x=0; x<5; x++) {
-          var tile = new cc.Sprite(res.Tile_png);
+          var tile = new cc.Sprite(res.Tile_highlight_png);
           var tileWidth = tile.getContentSize().width;
           var tileHeight = tile.getContentSize().height;
 
