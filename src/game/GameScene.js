@@ -9,6 +9,10 @@ var GameLayer = cc.Layer.extend({
 
 		var gameLayer = ccs.load(res.GameScene_json);
 		this.addChild(gameLayer.node);
+
+		var board = findChildByName(gameLayer.node, "board");
+		var minigame = new MiniGame();
+		board.addChild(minigame);
 	}
 });
 
