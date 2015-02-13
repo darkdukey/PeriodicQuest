@@ -24,7 +24,6 @@
         },
         "Children": [
           {
-            "ComboBoxIndex": 1,
             "SingleColor": {},
             "FirstColor": {
               "R": 150,
@@ -49,7 +48,10 @@
             },
             "Children": [
               {
-                "ComboBoxIndex": 1,
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "assets/img/board_bkg.png"
+                },
                 "SingleColor": {
                   "R": 163,
                   "G": 163,
@@ -63,6 +65,8 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
+                "Scale9Width": 620,
+                "Scale9Height": 620,
                 "TouchEnable": true,
                 "Tag": 7,
                 "PositionPercentXEnabled": true,

@@ -1,7 +1,11 @@
 var GameLayer = cc.Layer.extend({
-	
+
 	ctor:function () {
 		//
+		this._super();
+		
+		var gameLayer = ccs.load(res.GameScene_json);
+		this.addChild(gameLayer.node)
 	}
 });
 

@@ -7,6 +7,9 @@
         <Folder Name="assets">
           <Folder Name="img">
             <Image Name="buttonDefault.png" />
+            <Image Name="board_bkg.png" />
+            <Image Name="tile_highlight.png" />
+            <Image Name="tile_normal.png" />
           </Folder>
         </Folder>
         <Project Name="GameScene.csd" />
