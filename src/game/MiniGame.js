@@ -18,6 +18,7 @@ var MiniGame = cc.Node.extend({
           var tileHeight = tile.getContentSize().height;
 
           this.addChild(tile);
+          tile.setAnchorPoint(0,0);
           tile.setPosition(x * tileWidth, y * tileHeight);
         }
       }
