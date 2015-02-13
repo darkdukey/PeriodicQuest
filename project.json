@@ -13,6 +13,8 @@
     "jsList" : [
     	"src/utils/node_util.js",
         "src/resource.js",
-        "src/app.js"
+        "src/app.js",
+        "src/game/GameScene.js",
+        "src/game/MiniGame.js"
     ]
 }

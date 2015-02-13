@@ -1,5 +1,6 @@
 var res = {
-    MainScene_json : "res/MainScene.json"
+    MainScene_json : "res/MainScene.json",
+    Tile_png : "res/assets/img/tile.png"
 };
 
 var g_resources = [];
