@@ -34,6 +34,24 @@
                 <PressedFileData Type="Normal" Path="assets/img/buttonDefault.png" />
                 <NormalFileData Type="Normal" Path="assets/img/buttonDefault.png" />
               </NodeObjectData>
+              <NodeObjectData Name="title" ActionTag="-794115623" FrameEvent="" Tag="19" ObjectIndex="1" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="184.9999" RightMargin="185.0001" TopMargin="290.2512" BottomMargin="588.7488" FontSize="72" LabelText="Periodic" IsCustomSize="True" HorizontalAlignmentType="HT_Center" ctype="TextObjectData">
+                <Position X="319.9999" Y="629.2488" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <CColor A="255" R="137" G="137" B="137" />
+                <Size X="270.0000" Y="81.0000" />
+                <PrePosition X="0.5000" Y="0.6555" />
+                <PreSize X="0.4219" Y="0.0844" />
+              </NodeObjectData>
+              <NodeObjectData Name="Text_2" ActionTag="-1840292097" FrameEvent="" Tag="20" ObjectIndex="2" PositionPercentXEnabled="True" PositionPercentYEnabled="True" LeftMargin="218.9999" RightMargin="219.0001" TopMargin="375.9740" BottomMargin="503.0260" FontSize="72" LabelText="Quest" IsCustomSize="True" HorizontalAlignmentType="HT_Center" ctype="TextObjectData">
+                <Position X="319.9999" Y="543.5260" />
+                <Scale ScaleX="1.0000" ScaleY="1.0000" />
+                <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+                <CColor A="255" R="137" G="137" B="137" />
+                <Size X="202.0000" Y="81.0000" />
+                <PrePosition X="0.5000" Y="0.5662" />
+                <PreSize X="0.3156" Y="0.0844" />
+              </NodeObjectData>
             </Children>
             <SingleColor A="255" R="255" G="255" B="255" />
             <FirstColor A="255" R="150" G="200" B="255" />

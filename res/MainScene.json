@@ -109,6 +109,98 @@
                 "FrameEvent": "",
                 "Name": "btn_start",
                 "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 72,
+                "LabelText": "Periodic",
+                "IsCustomSize": true,
+                "HorizontalAlignmentType": "HT_Center",
+                "Tag": 19,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.4999999,
+                  "Y": 0.655467451
+                },
+                "PreSize": {
+                  "X": 0.421875,
+                  "Y": 0.084375
+                },
+                "LeftMargin": 184.999939,
+                "RightMargin": 185.000061,
+                "TopMargin": 290.251221,
+                "BottomMargin": 588.7488,
+                "ActionTag": -794115623,
+                "Position": {
+                  "X": 319.999939,
+                  "Y": 629.2488
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {
+                  "R": 137,
+                  "G": 137,
+                  "B": 137
+                },
+                "Size": {
+                  "X": 270.0,
+                  "Y": 81.0
+                },
+                "FrameEvent": "",
+                "Name": "title",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 72,
+                "LabelText": "Quest",
+                "IsCustomSize": true,
+                "HorizontalAlignmentType": "HT_Center",
+                "Tag": 20,
+                "PositionPercentXEnabled": true,
+                "PositionPercentYEnabled": true,
+                "PrePosition": {
+                  "X": 0.4999999,
+                  "Y": 0.5661729
+                },
+                "PreSize": {
+                  "X": 0.315625,
+                  "Y": 0.084375
+                },
+                "LeftMargin": 218.999939,
+                "RightMargin": 219.000061,
+                "TopMargin": 375.974,
+                "BottomMargin": 503.026,
+                "ActionTag": -1840292097,
+                "Position": {
+                  "X": 319.999939,
+                  "Y": 543.526
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {
+                  "R": 137,
+                  "G": 137,
+                  "B": 137
+                },
+                "Size": {
+                  "X": 202.0,
+                  "Y": 81.0
+                },
+                "FrameEvent": "",
+                "Name": "Text_2",
+                "ctype": "TextObjectData"
               }
             ],
             "ActionTag": -518155233,
