@@ -9,6 +9,7 @@
             <Image Name="buttonDefault.png" />
           </Folder>
         </Folder>
+        <Project Name="GameScene.csd" />
       </RootFolder>
     </Group>
   </SolutionFolder>

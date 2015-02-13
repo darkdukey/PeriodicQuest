@@ -1,0 +1,200 @@
+{
+  "ID": "f385da0e-d0b4-409e-af55-541097c8c5fe",
+  "Version": "2.1.0.0",
+  "Type": "Scene",
+  "Name": "GameScene",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 5,
+        "PrePosition": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "PreSize": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Children": [
+          {
+            "ComboBoxIndex": 1,
+            "SingleColor": {},
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Tag": 6,
+            "PositionPercentXEnabled": true,
+            "PositionPercentYEnabled": true,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.5
+            },
+            "PercentWidthEnable": true,
+            "PercentHeightEnable": true,
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "Children": [
+              {
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 163,
+                  "G": 163,
+                  "B": 163
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "Tag": 7,
+                "PositionPercentXEnabled": true,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.333333343
+                },
+                "PreSize": {
+                  "X": 0.96875,
+                  "Y": 0.6458333
+                },
+                "VerticalEdge": "BottomEdge",
+                "LeftMargin": 8.215057,
+                "RightMargin": 11.7849121,
+                "TopMargin": 330.0,
+                "BottomMargin": 10.0,
+                "ActionTag": 1927950402,
+                "Position": {
+                  "X": 320.0,
+                  "Y": 320.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.502878964,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 620.0,
+                  "Y": 620.0
+                },
+                "FrameEvent": "",
+                "Name": "board",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "Tag": 8,
+                "PrePosition": {
+                  "X": 0.5,
+                  "Y": 0.8333333
+                },
+                "PreSize": {
+                  "X": 0.96875,
+                  "Y": 0.30625
+                },
+                "LeftMargin": 10.0,
+                "RightMargin": 10.0,
+                "TopMargin": 13.0,
+                "BottomMargin": 653.0,
+                "ActionTag": 1365058971,
+                "Position": {
+                  "X": 320.0,
+                  "Y": 800.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 620.0,
+                  "Y": 294.0
+                },
+                "FrameEvent": "",
+                "Name": "battle_field",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1599661625,
+            "Position": {
+              "X": 320.0,
+              "Y": 480.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 640.0,
+              "Y": 960.0
+            },
+            "FrameEvent": "",
+            "Name": "root",
+            "ctype": "PanelObjectData"
+          }
+        ],
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Scale": {
+          "ScaleX": 1.0,
+          "ScaleY": 1.0
+        },
+        "AnchorPoint": {},
+        "CColor": {},
+        "Size": {
+          "X": 640.0,
+          "Y": 960.0
+        },
+        "FrameEvent": "",
+        "Name": "Scene",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  }
+}
