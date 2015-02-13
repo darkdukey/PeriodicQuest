@@ -10,9 +10,12 @@
             <Image Name="board_bkg.png" />
             <Image Name="tile_highlight.png" />
             <Image Name="tile_normal.png" />
+            <Image Name="name_bkg.png" />
+            <Image Name="hp_bar.png" />
           </Folder>
         </Folder>
         <Project Name="GameScene.csd" />
+        <Project Name="Card.csd" />
       </RootFolder>
     </Group>
   </SolutionFolder>

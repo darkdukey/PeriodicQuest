@@ -1,0 +1,289 @@
+{
+  "ID": "84be6110-cac1-4bd5-8df6-78e92a3251b6",
+  "Version": "2.1.0.0",
+  "Type": "Node",
+  "Name": "Card",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 10,
+        "PrePosition": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "PreSize": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Children": [
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "assets/img/tile_normal.png"
+            },
+            "Tag": 11,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -60.0,
+            "RightMargin": -60.0,
+            "TopMargin": -60.0,
+            "BottomMargin": -60.0,
+            "ActionTag": 776491498,
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 120.0,
+              "Y": 120.0
+            },
+            "FrameEvent": "",
+            "Name": "background",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
+              "Path": "assets/img/name_bkg.png"
+            },
+            "Tag": 15,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -48.9113922,
+            "RightMargin": -50.0886078,
+            "TopMargin": -20.6162415,
+            "BottomMargin": -28.3837585,
+            "Children": [
+              {
+                "FontSize": 36,
+                "LabelText": "Na",
+                "Tag": 12,
+                "PrePosition": {
+                  "X": 0.481629342,
+                  "Y": 0.498553067
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": 24.6813049,
+                "RightMargin": 28.3186951,
+                "TopMargin": 3.5709,
+                "BottomMargin": 3.4291,
+                "ActionTag": -920951506,
+                "Position": {
+                  "X": 47.6813049,
+                  "Y": 24.4291
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 46.0,
+                  "Y": 42.0
+                },
+                "FrameEvent": "",
+                "Name": "name",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": 1318852081,
+            "Position": {
+              "X": 0.5886078,
+              "Y": -3.88375854
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 99.0,
+              "Y": 49.0
+            },
+            "FrameEvent": "",
+            "Name": "name_bkg",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "ProgressInfo": 100,
+            "ImageFileData": {
+              "Type": "Normal",
+              "Path": "assets/img/hp_bar.png"
+            },
+            "Tag": 16,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -54.2991638,
+            "RightMargin": -55.7008362,
+            "TopMargin": 43.8558578,
+            "BottomMargin": -51.8558578,
+            "ActionTag": 622467775,
+            "Position": {
+              "X": 0.7008362,
+              "Y": -47.8558578
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 110.0,
+              "Y": 8.0
+            },
+            "FrameEvent": "",
+            "Name": "hp",
+            "ctype": "LoadingBarObjectData"
+          },
+          {
+            "FontSize": 14,
+            "LabelText": "LV",
+            "Tag": 17,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "ActionTag": -1809519898,
+            "Position": {
+              "X": -40.6179352,
+              "Y": 37.9689331
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {
+              "R": 137,
+              "G": 137,
+              "B": 137
+            },
+            "Size": {
+              "X": 16.0,
+              "Y": 20.0
+            },
+            "FrameEvent": "",
+            "Name": "level_label",
+            "ctype": "TextObjectData"
+          },
+          {
+            "FontSize": 14,
+            "LabelText": "1",
+            "Tag": 18,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -29.344635,
+            "RightMargin": 22.344635,
+            "TopMargin": -47.9688568,
+            "BottomMargin": 27.9688568,
+            "ActionTag": -2003017505,
+            "Position": {
+              "X": -25.844635,
+              "Y": 37.9688568
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {
+              "R": 137,
+              "G": 137,
+              "B": 137
+            },
+            "Size": {
+              "X": 7.0,
+              "Y": 20.0
+            },
+            "FrameEvent": "",
+            "Name": "level",
+            "ctype": "TextObjectData"
+          }
+        ],
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Scale": {
+          "ScaleX": 1.0,
+          "ScaleY": 1.0
+        },
+        "AnchorPoint": {},
+        "CColor": {},
+        "Size": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "FrameEvent": "",
+        "Name": "Node",
+        "ctype": "SingleNodeObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  }
+}
