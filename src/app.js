@@ -33,7 +33,7 @@ var HelloWorldLayer = cc.Layer.extend({
 var HelloWorldScene = cc.Scene.extend({
     onEnter:function () {
         this._super();
-        var layer = new HelloWorldLayer();
+        var layer = new MiniGame();
         this.addChild(layer);
     }
 });
