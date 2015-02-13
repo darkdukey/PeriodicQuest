@@ -72,17 +72,70 @@
                 "PositionPercentXEnabled": true,
                 "PrePosition": {
                   "X": 0.5,
-                  "Y": 0.333333343
+                  "Y": 0.3333
                 },
                 "PreSize": {
-                  "X": 0.96875,
-                  "Y": 0.6458333
+                  "X": 0.9688,
+                  "Y": 0.6458
                 },
                 "VerticalEdge": "BottomEdge",
-                "LeftMargin": 8.215057,
-                "RightMargin": 11.7849121,
+                "LeftMargin": 8.2151,
+                "RightMargin": 11.7849,
                 "TopMargin": 330.0,
                 "BottomMargin": 10.0,
+                "Children": [
+                  {
+                    "BackColorAlpha": 102,
+                    "ComboBoxIndex": 1,
+                    "SingleColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "FirstColor": {
+                      "R": 150,
+                      "G": 200
+                    },
+                    "EndColor": {},
+                    "ColorVector": {
+                      "ScaleY": 1.0
+                    },
+                    "TouchEnable": true,
+                    "Tag": 9,
+                    "PrePosition": {
+                      "X": 0.4999997,
+                      "Y": 0.49999994
+                    },
+                    "PreSize": {
+                      "X": 0.9677419,
+                      "Y": 0.9677419
+                    },
+                    "LeftMargin": 9.999817,
+                    "RightMargin": 10.0001831,
+                    "TopMargin": 10.0,
+                    "BottomMargin": 9.99996948,
+                    "ActionTag": -1562104449,
+                    "Position": {
+                      "X": 309.999817,
+                      "Y": 309.999969
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 600.0,
+                      "Y": 600.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "board",
+                    "ctype": "PanelObjectData"
+                  }
+                ],
                 "ActionTag": 1927950402,
                 "Position": {
                   "X": 320.0,
@@ -93,7 +146,7 @@
                   "ScaleY": 1.0
                 },
                 "AnchorPoint": {
-                  "ScaleX": 0.502878964,
+                  "ScaleX": 0.5029,
                   "ScaleY": 0.5
                 },
                 "CColor": {},
@@ -102,7 +155,7 @@
                   "Y": 620.0
                 },
                 "FrameEvent": "",
-                "Name": "board",
+                "Name": "board_bkg",
                 "ctype": "PanelObjectData"
               },
               {
@@ -124,11 +177,11 @@
                 "Tag": 8,
                 "PrePosition": {
                   "X": 0.5,
-                  "Y": 0.8333333
+                  "Y": 0.8333
                 },
                 "PreSize": {
-                  "X": 0.96875,
-                  "Y": 0.30625
+                  "X": 0.9688,
+                  "Y": 0.3063
                 },
                 "LeftMargin": 10.0,
                 "RightMargin": 10.0,
