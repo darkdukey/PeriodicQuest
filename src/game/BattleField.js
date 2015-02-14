@@ -26,6 +26,7 @@ var BattleField = cc.Layer.extend({
 		//Create player
 		for(i = 0; i < 4; i++){
 			var player = new Card();
+			player.setData([]);
 			this.card_pos[i].addChild(player);
 		}
 	}

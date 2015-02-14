@@ -67,7 +67,6 @@
                 },
                 "Scale9Width": 620,
                 "Scale9Height": 620,
-                "TouchEnable": true,
                 "Tag": 7,
                 "PositionPercentXEnabled": true,
                 "PrePosition": {
@@ -98,7 +97,6 @@
                     "ColorVector": {
                       "ScaleY": 1.0
                     },
-                    "TouchEnable": true,
                     "Tag": 9,
                     "PrePosition": {
                       "X": 0.4999997,
