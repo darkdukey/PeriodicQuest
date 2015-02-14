@@ -2,8 +2,8 @@ var Card = cc.Node.extend({
 	txt_name:null,
 	txt_level:null,
 	bar_hp:null,
-	hp:1,
-	curr_hp:1,
+	hp_max:1,
+	hp_curr:1,
 	
 	ctor:function() {
 		this._super();
@@ -19,8 +19,8 @@ var Card = cc.Node.extend({
 	setData:function(data) {
 		txt_name.string = data.name;
 		txt_level.string = data.level;
-		hp = data.hp;
-		curr_hp = data.currHp;
-		
+		hp_max = data.hp_max;
+		hp_curr = data.hp_curr;
+		bar_hp.percent = hp_curr;
 	}
 });
