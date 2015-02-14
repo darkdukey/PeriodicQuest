@@ -13,6 +13,12 @@ var GameLayer = cc.Layer.extend({
 		var board = findChildByName(gameLayer.node, "board");
 		var minigame = new MiniGame();
 		board.addChild(minigame);
+		
+		//Init Battle field
+		var field = findChildByName(gameLayer.node, "battle_field");
+		var battle = new BattleField();
+		battle.setNode(gameLayer.node);
+		field.addChild(battle);
 	}
 });
 
