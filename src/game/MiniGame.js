@@ -16,6 +16,8 @@ var MiniGame = cc.Node.extend({
 		this.previousTileIdx = -1;
 		this.currentCombination = [];
 
+		this.createBoard();
+
 		if ("mouse" in cc.sys.capabilities) {
 			cc.eventManager.addListener({
 				event: cc.EventListener.MOUSE,
@@ -38,10 +40,10 @@ var MiniGame = cc.Node.extend({
 				},
 			}, this);
 		}
-
+		
 		// No "else" here. some devices (modern notebooks) support both touches and mouse events
 		// and if so, it is good to support both input systems
-		if ("touch" in cc.sys.capabilities) {
+		if ("touches" in cc.sys.capabilities) {
 			cc.eventManager.addListener({
 				event: cc.EventListener.TOUCH_ALL_AT_ONCE,
 
@@ -95,16 +97,6 @@ var MiniGame = cc.Node.extend({
 			this.tiles[i].setTexture(res.Tile_normal_png);
 		this.currentCombination = [];
 	},
-
-  onEnter:function() {
-      this._super();
-      this.createBoard();
-
-      var label = new cc.LabelTTF("hello", "Arial", 48);
-      this.addChild(label);
-      var size = cc.director.getWinSize();
-      label.setPosition(size.width/2, size.height/2);
-  },
 
   createBoard:function() {
       for (var y=0; y<this.ROWS; y++) {
