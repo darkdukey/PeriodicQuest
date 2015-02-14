@@ -51,17 +51,16 @@ var MiniGame = cc.Node.extend({
 					this.onTouchesMoved(touches, event);
 				},
 				onTouchesMoved: function(touches, event) {
-					var event = touches[0];
-					var pos = event.getLocation();
+					var touch = touches[0];
+					var pos = touch.getLocation();
 					var target = event.getCurrentTarget();
 					var localPos = target.convertToNodeSpace(pos);
 					target.selectTileAtPosition(localPos);
 				},
 				onTouchesEnded: function(touches, event) {
-					this.onTouchesCacelled(touches, event);
+					this.onTouchesCancelled(touches, event);
 				},
 				onTouchesCancelled: function(touches, event) {
-					var event = touches[0];
 					var target = event.getCurrentTarget();
 					target.endWord();
 				},
