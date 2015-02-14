@@ -50,7 +50,7 @@
                 <EndColor A="255" R="255" G="255" B="255" />
                 <ColorVector ScaleY="1.0000" />
               </NodeObjectData>
-              <NodeObjectData Name="battle_field" ActionTag="1365058971" FrameEvent="" Tag="8" ObjectIndex="3" LeftMargin="10.0000" RightMargin="10.0000" TopMargin="13.0000" BottomMargin="653.0000" TouchEnable="True" BackColorAlpha="102" ComboBoxIndex="1" ColorAngle="90.0000" ctype="PanelObjectData">
+              <NodeObjectData Name="battle_field" ActionTag="1365058971" FrameEvent="" Tag="8" ObjectIndex="3" LeftMargin="10.0000" RightMargin="10.0000" TopMargin="13.0000" BottomMargin="653.0000" BackColorAlpha="102" ColorAngle="90.0000" ctype="PanelObjectData">
                 <Position X="320.0000" Y="800.0000" />
                 <Scale ScaleX="1.0000" ScaleY="1.0000" />
                 <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />

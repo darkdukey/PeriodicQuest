@@ -159,7 +159,6 @@
               },
               {
                 "BackColorAlpha": 102,
-                "ComboBoxIndex": 1,
                 "SingleColor": {
                   "R": 150,
                   "G": 200
@@ -172,7 +171,6 @@
                 "ColorVector": {
                   "ScaleY": 1.0
                 },
-                "TouchEnable": true,
                 "Tag": 8,
                 "PrePosition": {
                   "X": 0.5,
