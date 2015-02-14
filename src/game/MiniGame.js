@@ -6,7 +6,7 @@ var MiniGame = cc.Node.extend({
 
 		// constants
 		var tile = new cc.Sprite(res.Tile_normal_png);
-		this.tileSize = tile.getContentSize();
+		this.TILE_SIZE = tile.getContentSize();
 		this.ROWS = 5;
 		this.COLS = 5;
 
@@ -15,33 +15,76 @@ var MiniGame = cc.Node.extend({
 		this.currentTileIdx = -1;
 		this.previousTileIdx = -1;
 		this.currentCombination = [];
-		
-		cc.eventManager.addListener({
-			event: cc.EventListener.MOUSE,
 
-			onMouseMove: function(event) {
-				if (event.getButton() === cc.EventMouse.BUTTON_LEFT) {
-					
+		if ("mouse" in cc.sys.capabilities) {
+			cc.eventManager.addListener({
+				event: cc.EventListener.MOUSE,
+
+				onMouseDown: function(event) {
 					var pos = event.getLocation();
 					var target = event.getCurrentTarget();
-						
 					var localPos = target.convertToNodeSpace(pos);
-					var tile_x = Math.floor(localPos.x / target.tileSize.width);
-					var tile_y = Math.floor(localPos.y / target.tileSize.height);
-					var tile_idx = tile_x + target.COLS * tile_y;
-					target.tileHighlighted(tile_idx);
-				}
-			},
-			onMouseUp: function(event) {
-				var target = event.getCurrentTarget();
-				target.endWord();
-			},
-		}, this);
+					target.selectTileAtPosition(localPos);
+				},
+
+				onMouseMove: function(event) {
+					if (event.getButton() === cc.EventMouse.BUTTON_LEFT) {
+						this.onMouseDown(event);
+					}
+				},
+				onMouseUp: function(event) {
+					var target = event.getCurrentTarget();
+					target.endWord();
+				},
+			}, this);
+		}
+
+		// No "else" here. some devices (modern notebooks) support both touches and mouse events
+		// and if so, it is good to support both input systems
+		if ("touch" in cc.sys.capabilities) {
+			cc.eventManager.addListener({
+				event: cc.EventListener.TOUCH_ALL_AT_ONCE,
+
+				onTouchesBegan: function(touches, event) {
+					this.onTouchesMoved(touches, event);
+				},
+				onTouchesMoved: function(touches, event) {
+					var event = touches[0];
+					var pos = event.getLocation();
+					var target = event.getCurrentTarget();
+					var localPos = target.convertToNodeSpace(pos);
+					target.selectTileAtPosition(localPos);
+				},
+				onTouchesEnded: function(touches, event) {
+					this.onTouchesCacelled(touches, event);
+				},
+				onTouchesCancelled: function(touches, event) {
+					var event = touches[0];
+					var target = event.getCurrentTarget();
+					target.endWord();
+				},
+
+			}, this);
+		}
 	},
-	
+
+  selectTileAtPosition:function(position) {
+		if (position.x<0 || position.x>this.TILE_SIZE.width*this.COLS) {
+			return;
+		}
+		if (position.y<0 || position.y>this.TILE_SIZE.height*this.ROWS) {
+			return;
+		}
+
+		var tile_x = Math.floor(position.x / this.TILE_SIZE.width);
+		var tile_y = Math.floor(position.y / this.TILE_SIZE.height);
+		var tile_idx = tile_x + this.COLS * tile_y;
+		this.tileHighlighted(tile_idx);
+	},
+
 	tileHighlighted:function(tile_idx) {
 		var idx = this.currentCombination.indexOf(tile_idx);
-		if (idx === -1) {
+		if (idx === -1 && tile_idx>=0 && tile_idx<this.ROWS*this.COLS) {
 			var spr = this.tiles[tile_idx];
 			spr.setTexture(res.Tile_highlight_png);
 			this.currentCombination.push(tile_idx);
@@ -70,8 +113,8 @@ var MiniGame = cc.Node.extend({
 
           this.addChild(tile);
           tile.setAnchorPoint(0,0);
-          tile.setPosition(x * this.tileSize.width, y * this.tileSize.height);
-          
+          tile.setPosition(x * this.TILE_SIZE.width, y * this.TILE_SIZE.height);
+
           this.tiles.push(tile);
         }
       }
