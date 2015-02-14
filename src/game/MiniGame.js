@@ -40,7 +40,7 @@ var MiniGame = cc.Node.extend({
 				},
 			}, this);
 		}
-		
+
 		// No "else" here. some devices (modern notebooks) support both touches and mouse events
 		// and if so, it is good to support both input systems
 		if ("touches" in cc.sys.capabilities) {
@@ -69,7 +69,7 @@ var MiniGame = cc.Node.extend({
 		}
 	},
 
-  selectTileAtPosition:function(position) {
+	selectTileAtPosition:function(position) {
 		if (position.x<0 || position.x>this.TILE_SIZE.width*this.COLS) {
 			return;
 		}
@@ -80,34 +80,40 @@ var MiniGame = cc.Node.extend({
 		var tile_x = Math.floor(position.x / this.TILE_SIZE.width);
 		var tile_y = Math.floor(position.y / this.TILE_SIZE.height);
 		var tile_idx = tile_x + this.COLS * tile_y;
-		this.tileHighlighted(tile_idx);
-	},
 
-	tileHighlighted:function(tile_idx) {
 		var idx = this.currentCombination.indexOf(tile_idx);
-		if (idx === -1 && tile_idx>=0 && tile_idx<this.ROWS*this.COLS) {
+		if (idx === -1) {
 			var spr = this.tiles[tile_idx];
-			spr.setTexture(res.Tile_highlight_png);
-			this.currentCombination.push(tile_idx);
+			if (this.isInDistanceToCenter(position, spr)) {
+				spr.setTexture(res.Tile_highlight_png);
+				this.currentCombination.push(tile_idx);
+			}
 		}
 	},
+
+	isInDistanceToCenter: function(position, spr) {
+		var sprPos = cc.pAdd(spr.getPosition(), {x:this.TILE_SIZE.width/2, y:this.TILE_SIZE.height/2});
+		var distance = cc.pDistance(sprPos, position);
+		return (distance < (this.TILE_SIZE.height/2)*0.95);
+	},
+
 	endWord: function() {
 		for (var i=0; i<this.ROWS*this.COLS; i++)
-			this.tiles[i].setTexture(res.Tile_normal_png);
+		this.tiles[i].setTexture(res.Tile_normal_png);
 		this.currentCombination = [];
 	},
 
-  createBoard:function() {
-      for (var y=0; y<this.ROWS; y++) {
-        for (var x=0; x<this.COLS; x++) {
-          var tile = new cc.Sprite(res.Tile_normal_png);
+	createBoard:function() {
+		for (var y=0; y<this.ROWS; y++) {
+			for (var x=0; x<this.COLS; x++) {
+				var tile = new cc.Sprite(res.Tile_normal_png);
 
-          this.addChild(tile);
-          tile.setAnchorPoint(0,0);
-          tile.setPosition(x * this.TILE_SIZE.width, y * this.TILE_SIZE.height);
+				this.addChild(tile);
+				tile.setAnchorPoint(0,0);
+				tile.setPosition(x * this.TILE_SIZE.width, y * this.TILE_SIZE.height);
 
-          this.tiles.push(tile);
-        }
-      }
-  }
+				this.tiles.push(tile);
+			}
+		}
+	}
 });
