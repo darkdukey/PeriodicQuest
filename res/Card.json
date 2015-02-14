@@ -81,46 +81,6 @@
             "RightMargin": -50.0886078,
             "TopMargin": -20.6162415,
             "BottomMargin": -28.3837585,
-            "Children": [
-              {
-                "FontSize": 36,
-                "LabelText": "Na",
-                "Tag": 12,
-                "PrePosition": {
-                  "X": 0.481629342,
-                  "Y": 0.498553067
-                },
-                "PreSize": {
-                  "X": 0.0,
-                  "Y": 0.0
-                },
-                "LeftMargin": 24.6813049,
-                "RightMargin": 28.3186951,
-                "TopMargin": 3.5709,
-                "BottomMargin": 3.4291,
-                "ActionTag": -920951506,
-                "Position": {
-                  "X": 47.6813049,
-                  "Y": 24.4291
-                },
-                "Scale": {
-                  "ScaleX": 1.0,
-                  "ScaleY": 1.0
-                },
-                "AnchorPoint": {
-                  "ScaleX": 0.5,
-                  "ScaleY": 0.5
-                },
-                "CColor": {},
-                "Size": {
-                  "X": 46.0,
-                  "Y": 42.0
-                },
-                "FrameEvent": "",
-                "Name": "name",
-                "ctype": "TextObjectData"
-              }
-            ],
             "ActionTag": 1318852081,
             "Position": {
               "X": 0.5886078,
@@ -142,6 +102,45 @@
             "FrameEvent": "",
             "Name": "name_bkg",
             "ctype": "SpriteObjectData"
+          },
+          {
+            "FontSize": 36,
+            "LabelText": "Na",
+            "IsCustomSize": true,
+            "Tag": 12,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -25.3121338,
+            "RightMargin": -26.6878662,
+            "TopMargin": -17.1044464,
+            "BottomMargin": -24.8955536,
+            "ActionTag": -920951506,
+            "Position": {
+              "X": 0.6878662,
+              "Y": -3.89555359
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 52.0,
+              "Y": 42.0
+            },
+            "FrameEvent": "",
+            "Name": "name",
+            "ctype": "TextObjectData"
           },
           {
             "ProgressInfo": 100,
@@ -187,6 +186,7 @@
           {
             "FontSize": 14,
             "LabelText": "LV",
+            "IsCustomSize": true,
             "Tag": 17,
             "PrePosition": {
               "X": 0.0,
@@ -196,6 +196,10 @@
               "X": 0.0,
               "Y": 0.0
             },
+            "LeftMargin": -50.6179352,
+            "RightMargin": 30.6179352,
+            "TopMargin": -47.9689331,
+            "BottomMargin": 27.9689331,
             "ActionTag": -1809519898,
             "Position": {
               "X": -40.6179352,
@@ -215,7 +219,7 @@
               "B": 137
             },
             "Size": {
-              "X": 16.0,
+              "X": 20.0,
               "Y": 20.0
             },
             "FrameEvent": "",

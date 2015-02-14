@@ -12,7 +12,9 @@
 
     "jsList" : [
     	"src/utils/node_util.js",
-      "src/game/GameScene.js",
+    	"src/game/BattleField.js",
+    	"src/game/Card.js",
+      	"src/game/GameScene.js",
         "src/resource.js",
         "src/app.js",
         "src/game/GameScene.js",

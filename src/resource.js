@@ -1,6 +1,7 @@
 var res = {
     MainScene_json : "res/MainScene.json",
     GameScene_json : "res/GameScene.json",
+    Card_json : "res/Card.json",
     Tile_png : "res/assets/img/tile.png",
     Tile_normal_png : "res/assets/img/tile_normal.png",
     Tile_highlight_png : "res/assets/img/tile_highlight.png"
