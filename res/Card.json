@@ -26,6 +26,47 @@
           {
             "FileData": {
               "Type": "Normal",
+              "Path": "assets/img/tile_highlight.png"
+            },
+            "Tag": 36,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": -59.99994,
+            "RightMargin": -60.00006,
+            "TopMargin": -60.0,
+            "BottomMargin": -60.0,
+            "ActionTag": 39276593,
+            "Position": {
+              "X": 6.10351563E-05,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 120.0,
+              "Y": 120.0
+            },
+            "VisibleForFrame": false,
+            "FrameEvent": "",
+            "Name": "bkg_highlight",
+            "ctype": "SpriteObjectData"
+          },
+          {
+            "FileData": {
+              "Type": "Normal",
               "Path": "assets/img/tile_normal.png"
             },
             "Tag": 11,
@@ -60,7 +101,7 @@
               "Y": 120.0
             },
             "FrameEvent": "",
-            "Name": "background",
+            "Name": "bkg_normal",
             "ctype": "SpriteObjectData"
           },
           {

@@ -1,6 +1,8 @@
 <UserData>
   <OpenedDocuments>
     <FilePathData Path="MainScene.csd" />
+    <FilePathData Path="GameScene.csd" />
+    <FilePathData Path="Card.csd" />
   </OpenedDocuments>
-  <ActiveDocument Path="MainScene.csd" />
+  <ActiveDocument Path="Card.csd" />
 </UserData>

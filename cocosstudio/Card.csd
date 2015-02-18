@@ -12,7 +12,17 @@
         <PrePosition X="0.0000" Y="0.0000" />
         <PreSize X="0.0000" Y="0.0000" />
         <Children>
-          <NodeObjectData Name="background" ActionTag="776491498" FrameEvent="" Tag="11" ObjectIndex="1" LeftMargin="-60.0000" RightMargin="-60.0000" TopMargin="-60.0000" BottomMargin="-60.0000" ctype="SpriteObjectData">
+          <NodeObjectData Name="bkg_highlight" ActionTag="39276593" VisibleForFrame="False" FrameEvent="" Tag="36" ObjectIndex="4" LeftMargin="-59.9999" RightMargin="-60.0001" TopMargin="-60.0000" BottomMargin="-60.0000" ctype="SpriteObjectData">
+            <Position X="0.0001" Y="0.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <CColor A="255" R="255" G="255" B="255" />
+            <Size X="120.0000" Y="120.0000" />
+            <PrePosition X="0.0000" Y="0.0000" />
+            <PreSize X="0.0000" Y="0.0000" />
+            <FileData Type="Normal" Path="assets/img/tile_highlight.png" />
+          </NodeObjectData>
+          <NodeObjectData Name="bkg_normal" ActionTag="776491498" FrameEvent="" Tag="11" ObjectIndex="1" LeftMargin="-60.0000" RightMargin="-60.0000" TopMargin="-60.0000" BottomMargin="-60.0000" ctype="SpriteObjectData">
             <Position X="0.0000" Y="0.0000" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />

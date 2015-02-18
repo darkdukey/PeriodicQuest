@@ -1,4 +1,6 @@
 var Card = cc.Node.extend({
+	bkg_normal:null,
+	bkg_highlight:null,
 	txt_name:null,
 	txt_level:null,
 	bar_hp:null,
@@ -14,6 +16,8 @@ var Card = cc.Node.extend({
 		txt_name = findChildByName(ui.node, "name");
 		txt_level = findChildByName(ui.node, "level");
 		bar_hp = findChildByName(ui.node, "hp");
+		bkg_normal = findChildByName(ui.node, "bkg_normal");
+		bkg_highlight = findChildByName(ui.node, "bkg_highlight");
 	},
 	
 	setData:function(data) {
@@ -22,5 +26,15 @@ var Card = cc.Node.extend({
 		hp_max = data.hp_max;
 		hp_curr = data.hp_curr;
 		bar_hp.percent = hp_curr;
+	},
+	
+	setFocus:function(isFocus) {
+		if (isFocus) {
+			bkg_normal.visible = false;
+			bkg_highlight.visible = true;
+		}else{
+			bkg_highlight.visible = false;
+			bkg_normal.visible = true;
+		}
 	}
 });
