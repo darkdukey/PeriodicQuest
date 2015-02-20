@@ -12,11 +12,11 @@ var Card = cc.Node.extend({
 	
 	ctor:function() {
 		this._super();
-		
+
 		var ui = ccs.load(res.Card_json);
 		this.addChild(ui.node);
-		
-		
+
+
 		this.txt_name = findChildByName(ui.node, "name");
 		this.txt_level = findChildByName(ui.node, "level");
 		this.bar_hp = findChildByName(ui.node, "hp");
@@ -25,7 +25,7 @@ var Card = cc.Node.extend({
 		this.origin_y = this.bar_hp.y;
 		this.focus_y = this.origin_y + 5;
 	},
-	
+
 	setData:function(data) {
 		this.txt_name.string = data.name;
 		this.txt_level.string = data.level;
@@ -33,7 +33,7 @@ var Card = cc.Node.extend({
 		this.hp_curr = data.hp_curr;
 		this.bar_hp.percent = this.hp_curr;
 	},
-	
+
 	setFocus:function(isFocus) {
 		if (isFocus) {
 			this.bkg_normal.visible = false;

@@ -135,7 +135,7 @@ var MiniGame = cc.Node.extend({
 	createBoard:function() {
 		for (var y=0; y<this.ROWS; y++) {
 			for (var x=0; x<this.COLS; x++) {
-				var tile = new Element(Math.floor(Math.random() * ElementsProperties.length));
+				var tile = new Element(Math.floor(Math.random() * Object.keys(g_ElementsData).length));
 
 				this.addChild(tile);
 				tile.setAnchorPoint(0,0);

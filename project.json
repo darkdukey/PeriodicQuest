@@ -20,6 +20,6 @@
         "src/game/GameScene.js",
         "src/game/MiniGame.js",
         "src/game/Element.js",
-        "src/game/ElementsProperties.js"
+        "src/game/ElementsData.js"
     ]
 }
