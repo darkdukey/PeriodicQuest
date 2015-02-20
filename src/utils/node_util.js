@@ -5,11 +5,11 @@ function findChildByName(node, name) {
 		var children = node.getChildren();
 		for (var i = 0; i < children.length; i++) {
 			result = findChildByName(children[i], name);
-			
+
 			if(result)
 				return result;
 		}
 	}
-	
+
 	return result;
 }

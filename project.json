@@ -12,6 +12,7 @@
 
     "jsList" : [
     	"src/utils/node_util.js",
+      "src/utils/compound.js",
     	"src/game/BattleField.js",
     	"src/game/Card.js",
       	"src/game/GameScene.js",
