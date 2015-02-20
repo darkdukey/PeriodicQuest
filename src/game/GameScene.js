@@ -17,7 +17,7 @@ var GameLayer = cc.Layer.extend({
 		//Init Battle field
 		var field = findChildByName(gameLayer.node, "battle_field");
 		var battle = new BattleField();
-		battle.setNode(gameLayer.node);
+		battle.setNode(field);
 		field.addChild(battle);
 	}
 });
