@@ -5,7 +5,7 @@ var MiniGame = cc.Node.extend({
 		this._super();
 
 		// constants
-		var tile = new cc.Sprite(res.Tile_normal_png);
+		var tile = new Element("H");
 		this.TILE_SIZE = tile.getContentSize();
 		this.ROWS = 5;
 		this.COLS = 5;
@@ -89,7 +89,7 @@ var MiniGame = cc.Node.extend({
 			if (this.currentCombination.length===0 || this.areNeighbors(tile_idx, this.currentCombination[this.currentCombination.length - 1])) {
 				var spr = this.tiles[tile_idx];
 				if (this.isInDistanceToCenter(position, spr)) {
-					spr.setTexture(res.Tile_highlight_png);
+					spr.highlight(true);
 					this.currentCombination.push(tile_idx);
 				}
 			}
@@ -105,7 +105,7 @@ var MiniGame = cc.Node.extend({
 
 					// remove last element from array
 					var lastIdx = this.currentCombination.pop();
-					this.tiles[lastIdx].setTexture(res.Tile_normal_png);
+					this.tiles[lastIdx].highlight(false);
 				}
 			}
 		}
@@ -128,14 +128,14 @@ var MiniGame = cc.Node.extend({
 
 	endWord: function() {
 		for (var i=0; i<this.ROWS*this.COLS; i++)
-		this.tiles[i].setTexture(res.Tile_normal_png);
+		this.tiles[i].highlight(false);
 		this.currentCombination = [];
 	},
 
 	createBoard:function() {
 		for (var y=0; y<this.ROWS; y++) {
 			for (var x=0; x<this.COLS; x++) {
-				var tile = new cc.Sprite(res.Tile_normal_png);
+				var tile = new Element("H");
 
 				this.addChild(tile);
 				tile.setAnchorPoint(0,0);

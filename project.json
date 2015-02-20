@@ -18,6 +18,7 @@
         "src/resource.js",
         "src/app.js",
         "src/game/GameScene.js",
-        "src/game/MiniGame.js"
+        "src/game/MiniGame.js",
+        "src/game/Element.js"
     ]
 }
