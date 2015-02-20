@@ -18,6 +18,7 @@ var MiniGame = cc.Node.extend({
 
 		this.createBoard();
 
+
 		if ("mouse" in cc.sys.capabilities) {
 			cc.eventManager.addListener({
 				event: cc.EventListener.MOUSE,
@@ -82,13 +83,22 @@ var MiniGame = cc.Node.extend({
 		var tile_idx = tile_x + this.COLS * tile_y;
 
 		var idx = this.currentCombination.indexOf(tile_idx);
-		if (idx === -1) {
+		if (idx === -1 && (this.currentCombination.length===0 || this.areNeighbors(tile_idx, this.currentCombination[this.currentCombination.length - 1]))) {
 			var spr = this.tiles[tile_idx];
 			if (this.isInDistanceToCenter(position, spr)) {
 				spr.setTexture(res.Tile_highlight_png);
 				this.currentCombination.push(tile_idx);
 			}
 		}
+	},
+
+	areNeighbors: function(idx1, idx2) {
+		var x1 = idx1 % this.COLS;
+		var y1 = Math.floor(idx1 / this.COLS);
+		var x2 = idx2 % this.COLS;
+		var y2 = Math.floor(idx2 / this.COLS);
+
+		return (Math.abs(x1-x2)<=1 && Math.abs(y1-y2)<=1);
 	},
 
 	isInDistanceToCenter: function(position, spr) {
