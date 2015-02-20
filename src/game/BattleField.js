@@ -86,32 +86,29 @@ var BattleField = cc.Layer.extend({
 		}
 
 		if ("touches" in cc.sys.capabilities) {
-//			cc.eventManager.addListener({
-//				event: cc.EventListener.TOUCH_ONE_BY_ONE,
-//				swallowTouches: true,
-//				onTouchBegan: function (touch, event) {
-//					var locationInNode = selfPointer.convertToNodeSpace(touch.getLocation());
-//					var s = selfPointer.getContentSize();
-//					var rect = cc.rect(0, 0, s.width, s.height);
-//
-//					if (cc.rectContainsPoint(rect, locationInNode)) {
-//						selfPointer.setColor(cc.color.RED);
-//						return true;
-//					}
-//					return false;
-//				},
-//				onTouchMoved: function (touch, event) {
-//					//this.setPosition(this.getPosition() + touch.getDelta());
-//				},
-//				onTouchEnded: function (touch, event) {
-//					selfPointer.setColor(cc.color.WHITE);
-//					if(selfPointer._removeListenerOnTouchEnded) {
-//						cc.eventManager.removeListener(selfPointer._listener);
-//						selfPointer._listener = null;
-//					}
-//				}
-//			}
-//			, this);
+			cc.eventManager.addListener({
+				event: cc.EventListener.TOUCH_ONE_BY_ONE,
+				onTouchBegan: function (touch, event) {
+					cc.log("onTouchBegin");
+					var point = touch.getLocation();
+					if (hitTest(self.node, point)) {
+						return true;
+					}
+					return false;
+				},
+				onTouchEnded: function (touch, event) {
+					cc.log("onTouchEnded");
+					var point = touch.getLocation();
+					for (var i=0; i<self.enemies.length; i++) {
+						var enemy = self.enemies[i];
+						if(hitTest(enemy.bkg_normal, point)){
+							self.setFocus(enemy);
+							break;
+						}
+					}
+				}
+			}
+			, this);
 		}
 	},
 	
