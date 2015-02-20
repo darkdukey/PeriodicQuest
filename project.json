@@ -19,6 +19,7 @@
         "src/app.js",
         "src/game/GameScene.js",
         "src/game/MiniGame.js",
-        "src/game/Element.js"
+        "src/game/Element.js",
+        "src/game/ElementsProperties.js"
     ]
 }
