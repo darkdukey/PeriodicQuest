@@ -23,7 +23,7 @@ var Card = cc.Node.extend({
 		this.bkg_normal = findChildByName(ui.node, "bkg_normal");
 		this.bkg_highlight = findChildByName(ui.node, "bkg_highlight");
 		this.origin_y = this.bar_hp.y;
-		this.focus_y = this.origin_y + 5;
+		this.focus_y = this.origin_y + 6;
 	},
 
 	setData:function(data) {
