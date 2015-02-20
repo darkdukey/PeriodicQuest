@@ -1,5 +1,6 @@
 var BattleField = cc.Layer.extend({
 	selected_enemy:null,
+	node:null,
 	card_pos:[],
 	enemy_pos:[],
 	cards:[],
@@ -62,17 +63,19 @@ var BattleField = cc.Layer.extend({
 	
 	ctor:function(node){
 		this._super();
+		self = this;
 		
 		if ("mouse" in cc.sys.capabilities) {
 			cc.eventManager.addListener({
 				event: cc.EventListener.MOUSE,
 				onMouseUp: function(event) {
-					var target = event.getCurrentTarget();
-					if(target == this){
-						cc.log("Found Object");
-						for ( var ene in this.enemies) {
-							if (target == ene) {
-								this.setFocus(ene);
+					var point = event.getLocation();
+					if(hitTest(self.node, point)) {
+						
+						for (var i=0; i<self.enemies.length; i++) {
+							var enemy = self.enemies[i];
+							if(hitTest(enemy.bkg_normal, point)){
+								self.setFocus(enemy);
 								break;
 							}
 						}
@@ -83,11 +86,37 @@ var BattleField = cc.Layer.extend({
 		}
 
 		if ("touches" in cc.sys.capabilities) {
-			//
+//			cc.eventManager.addListener({
+//				event: cc.EventListener.TOUCH_ONE_BY_ONE,
+//				swallowTouches: true,
+//				onTouchBegan: function (touch, event) {
+//					var locationInNode = selfPointer.convertToNodeSpace(touch.getLocation());
+//					var s = selfPointer.getContentSize();
+//					var rect = cc.rect(0, 0, s.width, s.height);
+//
+//					if (cc.rectContainsPoint(rect, locationInNode)) {
+//						selfPointer.setColor(cc.color.RED);
+//						return true;
+//					}
+//					return false;
+//				},
+//				onTouchMoved: function (touch, event) {
+//					//this.setPosition(this.getPosition() + touch.getDelta());
+//				},
+//				onTouchEnded: function (touch, event) {
+//					selfPointer.setColor(cc.color.WHITE);
+//					if(selfPointer._removeListenerOnTouchEnded) {
+//						cc.eventManager.removeListener(selfPointer._listener);
+//						selfPointer._listener = null;
+//					}
+//				}
+//			}
+//			, this);
 		}
 	},
 	
 	setNode: function(node){
+		this.node = node;
 		//Load battle field data
 		for(i = 0; i < 4; i++){
 			var pos = findChildByName(node, "card_" + (i+1));
@@ -104,6 +133,7 @@ var BattleField = cc.Layer.extend({
 			this.enemy_pos[i].addChild(enemy);
 			
 			this.enemies.push(enemy);
+			enemy.id = i;
 		}
 		
 		//Create player
@@ -117,7 +147,8 @@ var BattleField = cc.Layer.extend({
 	},
 	
 	setFocus: function(enemy){
-		for ( var en in this.enemies) {
+		for (var i = 0; i < this.enemies.length; i++) {
+			var en = this.enemies[i];
 			en.setFocus(false);
 		}
 		

@@ -13,3 +13,10 @@ function findChildByName(node, name) {
 	
 	return result;
 }
+
+function hitTest(node, point) {
+	var pos = node.convertToNodeSpace(point);
+	var s = node.getContentSize();
+	var rect = cc.rect(0,0,s.width, s.height);
+	return cc.rectContainsPoint(rect, pos);
+}

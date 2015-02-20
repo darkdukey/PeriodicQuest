@@ -1,7 +1,6 @@
 {
   "ID": "a2ee0952-26b5-49ae-8bf9-4f1d6279b798",
-  "Version": "2.1.0.0",
-  "Type": "Scene",
+  "Version": "2.1.2.0",
   "Name": "MainScene",
   "Content": {
     "Content": {
@@ -111,28 +110,28 @@
                 "ctype": "ButtonObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 72,
                 "LabelText": "Periodic",
-                "IsCustomSize": true,
                 "HorizontalAlignmentType": "HT_Center",
                 "Tag": 19,
                 "PositionPercentXEnabled": true,
                 "PositionPercentYEnabled": true,
                 "PrePosition": {
-                  "X": 0.4999999,
-                  "Y": 0.655467451
+                  "X": 0.5,
+                  "Y": 0.6555
                 },
                 "PreSize": {
-                  "X": 0.421875,
-                  "Y": 0.084375
+                  "X": 0.4219,
+                  "Y": 0.0844
                 },
-                "LeftMargin": 184.999939,
-                "RightMargin": 185.000061,
-                "TopMargin": 290.251221,
+                "LeftMargin": 184.9999,
+                "RightMargin": 185.0001,
+                "TopMargin": 290.2512,
                 "BottomMargin": 588.7488,
                 "ActionTag": -794115623,
                 "Position": {
-                  "X": 319.999939,
+                  "X": 319.9999,
                   "Y": 629.2488
                 },
                 "Scale": {
@@ -157,28 +156,28 @@
                 "ctype": "TextObjectData"
               },
               {
+                "IsCustomSize": true,
                 "FontSize": 72,
                 "LabelText": "Quest",
-                "IsCustomSize": true,
                 "HorizontalAlignmentType": "HT_Center",
                 "Tag": 20,
                 "PositionPercentXEnabled": true,
                 "PositionPercentYEnabled": true,
                 "PrePosition": {
-                  "X": 0.4999999,
-                  "Y": 0.5661729
+                  "X": 0.5,
+                  "Y": 0.5662
                 },
                 "PreSize": {
-                  "X": 0.315625,
-                  "Y": 0.084375
+                  "X": 0.3156,
+                  "Y": 0.0844
                 },
-                "LeftMargin": 218.999939,
-                "RightMargin": 219.000061,
+                "LeftMargin": 218.9999,
+                "RightMargin": 219.0001,
                 "TopMargin": 375.974,
                 "BottomMargin": 503.026,
                 "ActionTag": -1840292097,
                 "Position": {
-                  "X": 319.999939,
+                  "X": 319.9999,
                   "Y": 543.526
                 },
                 "Scale": {
@@ -246,5 +245,6 @@
       },
       "ctype": "GameProjectData"
     }
-  }
+  },
+  "Type": "Scene"
 }

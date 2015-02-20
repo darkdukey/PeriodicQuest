@@ -1,7 +1,6 @@
 {
   "ID": "84be6110-cac1-4bd5-8df6-78e92a3251b6",
-  "Version": "2.1.0.0",
-  "Type": "Node",
+  "Version": "2.1.2.0",
   "Name": "Card",
   "Content": {
     "Content": {
@@ -37,13 +36,13 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -59.99994,
-            "RightMargin": -60.00006,
+            "LeftMargin": -59.9999,
+            "RightMargin": -60.0001,
             "TopMargin": -60.0,
             "BottomMargin": -60.0,
             "ActionTag": 39276593,
             "Position": {
-              "X": 6.10351563E-05,
+              "X": 0.0001,
               "Y": 0.0
             },
             "Scale": {
@@ -118,14 +117,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -48.9113922,
-            "RightMargin": -50.0886078,
-            "TopMargin": -20.6162415,
-            "BottomMargin": -28.3837585,
+            "LeftMargin": -48.9114,
+            "RightMargin": -50.0886,
+            "TopMargin": -20.6162,
+            "BottomMargin": -28.3838,
             "ActionTag": 1318852081,
             "Position": {
-              "X": 0.5886078,
-              "Y": -3.88375854
+              "X": 0.5886,
+              "Y": -3.8838
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -145,9 +144,9 @@
             "ctype": "SpriteObjectData"
           },
           {
+            "IsCustomSize": true,
             "FontSize": 36,
             "LabelText": "Na",
-            "IsCustomSize": true,
             "Tag": 12,
             "PrePosition": {
               "X": 0.0,
@@ -157,14 +156,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -25.3121338,
-            "RightMargin": -26.6878662,
-            "TopMargin": -17.1044464,
-            "BottomMargin": -24.8955536,
+            "LeftMargin": -25.3121,
+            "RightMargin": -26.6879,
+            "TopMargin": -17.1044,
+            "BottomMargin": -24.8956,
             "ActionTag": -920951506,
             "Position": {
-              "X": 0.6878662,
-              "Y": -3.89555359
+              "X": 0.6879,
+              "Y": -3.8956
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -198,14 +197,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -54.2991638,
-            "RightMargin": -55.7008362,
-            "TopMargin": 43.8558578,
-            "BottomMargin": -51.8558578,
+            "LeftMargin": -54.2992,
+            "RightMargin": -55.7008,
+            "TopMargin": 43.8559,
+            "BottomMargin": -51.8559,
             "ActionTag": 622467775,
             "Position": {
-              "X": 0.7008362,
-              "Y": -47.8558578
+              "X": 0.7008,
+              "Y": -47.8559
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -225,9 +224,9 @@
             "ctype": "LoadingBarObjectData"
           },
           {
+            "IsCustomSize": true,
             "FontSize": 14,
             "LabelText": "LV",
-            "IsCustomSize": true,
             "Tag": 17,
             "PrePosition": {
               "X": 0.0,
@@ -237,14 +236,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -50.6179352,
-            "RightMargin": 30.6179352,
-            "TopMargin": -47.9689331,
-            "BottomMargin": 27.9689331,
+            "LeftMargin": -50.6179,
+            "RightMargin": 30.6179,
+            "TopMargin": -47.9689,
+            "BottomMargin": 27.9689,
             "ActionTag": -1809519898,
             "Position": {
-              "X": -40.6179352,
-              "Y": 37.9689331
+              "X": -40.6179,
+              "Y": 37.9689
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -279,14 +278,14 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -29.344635,
-            "RightMargin": 22.344635,
-            "TopMargin": -47.9688568,
-            "BottomMargin": 27.9688568,
+            "LeftMargin": -29.3446,
+            "RightMargin": 22.3446,
+            "TopMargin": -47.9689,
+            "BottomMargin": 27.9689,
             "ActionTag": -2003017505,
             "Position": {
-              "X": -25.844635,
-              "Y": 37.9688568
+              "X": -25.8446,
+              "Y": 37.9689
             },
             "Scale": {
               "ScaleX": 1.0,
@@ -330,5 +329,6 @@
       },
       "ctype": "GameProjectData"
     }
-  }
+  },
+  "Type": "Node"
 }

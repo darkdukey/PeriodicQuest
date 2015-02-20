@@ -1,7 +1,6 @@
 {
   "ID": "f385da0e-d0b4-409e-af55-541097c8c5fe",
-  "Version": "2.1.0.0",
-  "Type": "Scene",
+  "Version": "2.1.2.0",
   "Name": "GameScene",
   "Content": {
     "Content": {
@@ -99,21 +98,21 @@
                     },
                     "Tag": 9,
                     "PrePosition": {
-                      "X": 0.4999997,
-                      "Y": 0.49999994
+                      "X": 0.5,
+                      "Y": 0.5
                     },
                     "PreSize": {
-                      "X": 0.9677419,
-                      "Y": 0.9677419
+                      "X": 0.9677,
+                      "Y": 0.9677
                     },
-                    "LeftMargin": 9.999817,
-                    "RightMargin": 10.0001831,
+                    "LeftMargin": 9.9998,
+                    "RightMargin": 10.0002,
                     "TopMargin": 10.0,
-                    "BottomMargin": 9.99996948,
+                    "BottomMargin": 10.0,
                     "ActionTag": -1562104449,
                     "Position": {
-                      "X": 309.999817,
-                      "Y": 309.999969
+                      "X": 309.9998,
+                      "Y": 310.0
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -186,21 +185,21 @@
                   {
                     "Tag": 21,
                     "PrePosition": {
-                      "X": 0.143229529,
-                      "Y": 0.220364109
+                      "X": 0.1432,
+                      "Y": 0.2204
                     },
                     "PreSize": {
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 88.80231,
+                    "LeftMargin": 88.8023,
                     "RightMargin": 531.1977,
-                    "TopMargin": 229.212952,
-                    "BottomMargin": 64.78705,
+                    "TopMargin": 229.213,
+                    "BottomMargin": 64.787,
                     "ActionTag": 182541843,
                     "Position": {
-                      "X": 88.80231,
-                      "Y": 64.78705
+                      "X": 88.8023,
+                      "Y": 64.787
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -219,21 +218,21 @@
                   {
                     "Tag": 22,
                     "PrePosition": {
-                      "X": 0.391269475,
-                      "Y": 0.220364109
+                      "X": 0.3913,
+                      "Y": 0.2204
                     },
                     "PreSize": {
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 242.587067,
-                    "RightMargin": 377.412933,
-                    "TopMargin": 229.212952,
-                    "BottomMargin": 64.78705,
+                    "LeftMargin": 242.5871,
+                    "RightMargin": 377.4129,
+                    "TopMargin": 229.213,
+                    "BottomMargin": 64.787,
                     "ActionTag": -1837534604,
                     "Position": {
-                      "X": 242.587067,
-                      "Y": 64.78705
+                      "X": 242.5871,
+                      "Y": 64.787
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -252,21 +251,21 @@
                   {
                     "Tag": 23,
                     "PrePosition": {
-                      "X": 0.6342123,
-                      "Y": 0.220361829
+                      "X": 0.6342,
+                      "Y": 0.2204
                     },
                     "PreSize": {
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 393.211639,
-                    "RightMargin": 226.788361,
-                    "TopMargin": 229.213623,
-                    "BottomMargin": 64.78638,
+                    "LeftMargin": 393.2116,
+                    "RightMargin": 226.7884,
+                    "TopMargin": 229.2136,
+                    "BottomMargin": 64.7864,
                     "ActionTag": 1206413506,
                     "Position": {
-                      "X": 393.211639,
-                      "Y": 64.78638
+                      "X": 393.2116,
+                      "Y": 64.7864
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -285,21 +284,21 @@
                   {
                     "Tag": 24,
                     "PrePosition": {
-                      "X": 0.8695102,
-                      "Y": 0.225737482
+                      "X": 0.8695,
+                      "Y": 0.2257
                     },
                     "PreSize": {
                       "X": 0.0,
                       "Y": 0.0
                     },
                     "LeftMargin": 539.0963,
-                    "RightMargin": 80.90369,
-                    "TopMargin": 227.633179,
-                    "BottomMargin": 66.36682,
+                    "RightMargin": 80.9037,
+                    "TopMargin": 227.6332,
+                    "BottomMargin": 66.3668,
                     "ActionTag": -1849524791,
                     "Position": {
                       "X": 539.0963,
-                      "Y": 66.36682
+                      "Y": 66.3668
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -318,21 +317,21 @@
                   {
                     "Tag": 32,
                     "PrePosition": {
-                      "X": 0.141927019,
-                      "Y": 0.753646135
+                      "X": 0.1419,
+                      "Y": 0.7536
                     },
                     "PreSize": {
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 87.99475,
-                    "RightMargin": 532.005249,
-                    "TopMargin": 72.42804,
-                    "BottomMargin": 221.57196,
+                    "LeftMargin": 87.9948,
+                    "RightMargin": 532.0052,
+                    "TopMargin": 72.428,
+                    "BottomMargin": 221.572,
                     "ActionTag": 963656478,
                     "Position": {
-                      "X": 87.99475,
-                      "Y": 221.57196
+                      "X": 87.9948,
+                      "Y": 221.572
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -351,21 +350,21 @@
                   {
                     "Tag": 33,
                     "PrePosition": {
-                      "X": 0.383732051,
-                      "Y": 0.7536457
+                      "X": 0.3837,
+                      "Y": 0.7536
                     },
                     "PreSize": {
                       "X": 0.0,
                       "Y": 0.0
                     },
-                    "LeftMargin": 237.913879,
-                    "RightMargin": 382.086121,
-                    "TopMargin": 72.42816,
-                    "BottomMargin": 221.571838,
+                    "LeftMargin": 237.9139,
+                    "RightMargin": 382.0861,
+                    "TopMargin": 72.4282,
+                    "BottomMargin": 221.5718,
                     "ActionTag": 120033491,
                     "Position": {
-                      "X": 237.913879,
-                      "Y": 221.571838
+                      "X": 237.9139,
+                      "Y": 221.5718
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -384,21 +383,21 @@
                   {
                     "Tag": 34,
                     "PrePosition": {
-                      "X": 0.6255371,
-                      "Y": 0.7536457
+                      "X": 0.6255,
+                      "Y": 0.7536
                     },
                     "PreSize": {
                       "X": 0.0,
                       "Y": 0.0
                     },
                     "LeftMargin": 387.833,
-                    "RightMargin": 232.166992,
-                    "TopMargin": 72.42816,
-                    "BottomMargin": 221.571838,
+                    "RightMargin": 232.167,
+                    "TopMargin": 72.4282,
+                    "BottomMargin": 221.5718,
                     "ActionTag": -1280860603,
                     "Position": {
                       "X": 387.833,
-                      "Y": 221.571838
+                      "Y": 221.5718
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -417,21 +416,21 @@
                   {
                     "Tag": 35,
                     "PrePosition": {
-                      "X": 0.867342055,
-                      "Y": 0.7536457
+                      "X": 0.8673,
+                      "Y": 0.7536
                     },
                     "PreSize": {
                       "X": 0.0,
                       "Y": 0.0
                     },
                     "LeftMargin": 537.7521,
-                    "RightMargin": 82.2479248,
-                    "TopMargin": 72.42816,
-                    "BottomMargin": 221.571838,
+                    "RightMargin": 82.2479,
+                    "TopMargin": 72.4282,
+                    "BottomMargin": 221.5718,
                     "ActionTag": -235113536,
                     "Position": {
                       "X": 537.7521,
-                      "Y": 221.571838
+                      "Y": 221.5718
                     },
                     "Scale": {
                       "ScaleX": 1.0,
@@ -514,5 +513,6 @@
       },
       "ctype": "GameProjectData"
     }
-  }
+  },
+  "Type": "Scene"
 }
