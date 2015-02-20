@@ -83,11 +83,30 @@ var MiniGame = cc.Node.extend({
 		var tile_idx = tile_x + this.COLS * tile_y;
 
 		var idx = this.currentCombination.indexOf(tile_idx);
-		if (idx === -1 && (this.currentCombination.length===0 || this.areNeighbors(tile_idx, this.currentCombination[this.currentCombination.length - 1]))) {
-			var spr = this.tiles[tile_idx];
-			if (this.isInDistanceToCenter(position, spr)) {
-				spr.setTexture(res.Tile_highlight_png);
-				this.currentCombination.push(tile_idx);
+
+		// touching a new tile
+		if (idx === -1) {
+			if (this.currentCombination.length===0 || this.areNeighbors(tile_idx, this.currentCombination[this.currentCombination.length - 1])) {
+				var spr = this.tiles[tile_idx];
+				if (this.isInDistanceToCenter(position, spr)) {
+					spr.setTexture(res.Tile_highlight_png);
+					this.currentCombination.push(tile_idx);
+				}
+			}
+		}
+		else
+		{
+			// touching existing tile
+			// if it is the previous one, then remove the current one
+			if (this.currentCombination.length>1 && tile_idx===this.currentCombination[this.currentCombination.length-2]) {
+
+				var spr = this.tiles[tile_idx];
+				if (this.isInDistanceToCenter(position, spr)) {
+
+					// remove last element from array
+					var lastIdx = this.currentCombination.pop();
+					this.tiles[lastIdx].setTexture(res.Tile_normal_png);
+				}
 			}
 		}
 	},
