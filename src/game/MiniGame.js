@@ -70,6 +70,25 @@ var MiniGame = cc.Node.extend({
 		}
 	},
 
+	endWord: function() {
+		for (var i=0; i<this.ROWS*this.COLS; i++) {
+			this.tiles[i].highlight(false);
+		}
+
+		if (this.currentCombination.length>0) {
+			var string = [];
+
+			for (var i = 0; i < this.currentCombination.length; i++) {
+				var element = this.tiles[this.currentCombination[i]];
+				string.push(element.properties.symbol);
+			}
+			this.currentCombination = [];
+
+			cc.log("Selected compounds: " + string);
+			// validate_string(string)
+		}
+	},
+
 	selectTileAtPosition:function(position) {
 		if (position.x<0 || position.x>this.TILE_SIZE.width*this.COLS) {
 			return;
@@ -124,12 +143,6 @@ var MiniGame = cc.Node.extend({
 		var sprPos = cc.pAdd(spr.getPosition(), {x:this.TILE_SIZE.width/2, y:this.TILE_SIZE.height/2});
 		var distance = cc.pDistance(sprPos, position);
 		return (distance < (this.TILE_SIZE.height/2)*0.95);
-	},
-
-	endWord: function() {
-		for (var i=0; i<this.ROWS*this.COLS; i++)
-		this.tiles[i].highlight(false);
-		this.currentCombination = [];
 	},
 
 	createBoard:function() {

@@ -7,8 +7,7 @@ var Element = cc.Node.extend({
         var keys =  Object.keys(g_ElementsData);
         var elementKey = keys[elementNumber];
 
-        this._element = g_ElementsData[elementKey];
-        this._elementNumber = elementNumber;
+        this.properties = g_ElementsData[elementKey];
 
         // background
         this._background = new cc.Sprite(res.Tile_normal_png);
@@ -19,14 +18,14 @@ var Element = cc.Node.extend({
         this.setContentSize(size);
 
         // Symbol
-        this._name = new cc.LabelTTF(this._element.symbol, "Arial", size.width*0.5);
+        this._name = new cc.LabelTTF(this.properties.symbol, "Arial", size.width*0.5);
         this._name.setAnchorPoint(0.5, 0.5);
         this._name.setNormalizedPosition(0.5, 0.4);
         this._name.setColor({r:32, g:32, b:32});
         this.addChild(this._name);
 
         // Atomic number
-        this._number = new cc.LabelTTF(this._element.atomic_number, "Arial", size.width*0.2);
+        this._number = new cc.LabelTTF(this.properties.atomic_number, "Arial", size.width*0.2);
         this._number.setAnchorPoint(0.5, 0.5);
         this._number.setNormalizedPosition(0.15, 0.74);
         this._number.setColor({r:128, g:64, b:64});
