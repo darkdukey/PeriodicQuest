@@ -1,7 +1,10 @@
 var BattleField = cc.Layer.extend({
+	selected_enemy:null,
+	node:null,
 	card_pos:[],
 	enemy_pos:[],
 	cards:[],
+	enemies:[],
 	data:{
 		"cards":
 		[{
@@ -30,10 +33,10 @@ var BattleField = cc.Layer.extend({
 			"hp_curr":400
 		}],
 		"enemies":
-		[{
-			"name":"H",
-			"level":1,
-			"attack":30,
+			[{
+				"name":"H",
+				"level":1,
+				"attack":30,
 			"hp_max":100,
 			"hp_curr":100
 		},{
@@ -57,11 +60,60 @@ var BattleField = cc.Layer.extend({
 		}]
 	},
 	
+	
 	ctor:function(node){
 		this._super();
+		self = this;
+		
+		if ("mouse" in cc.sys.capabilities) {
+			cc.eventManager.addListener({
+				event: cc.EventListener.MOUSE,
+				onMouseUp: function(event) {
+					var point = event.getLocation();
+					if(hitTest(self.node, point)) {
+						
+						for (var i=0; i<self.enemies.length; i++) {
+							var enemy = self.enemies[i];
+							if(hitTest(enemy.bkg_normal, point)){
+								self.setFocus(enemy);
+								break;
+							}
+						}
+					}
+				}
+			}
+			, this);
+		}
+
+		if ("touches" in cc.sys.capabilities) {
+			cc.eventManager.addListener({
+				event: cc.EventListener.TOUCH_ONE_BY_ONE,
+				onTouchBegan: function (touch, event) {
+					cc.log("onTouchBegin");
+					var point = touch.getLocation();
+					if (hitTest(self.node, point)) {
+						return true;
+					}
+					return false;
+				},
+				onTouchEnded: function (touch, event) {
+					cc.log("onTouchEnded");
+					var point = touch.getLocation();
+					for (var i=0; i<self.enemies.length; i++) {
+						var enemy = self.enemies[i];
+						if(hitTest(enemy.bkg_normal, point)){
+							self.setFocus(enemy);
+							break;
+						}
+					}
+				}
+			}
+			, this);
+		}
 	},
 	
 	setNode: function(node){
+		this.node = node;
 		//Load battle field data
 		for(i = 0; i < 4; i++){
 			var pos = findChildByName(node, "card_" + (i+1));
@@ -76,13 +128,29 @@ var BattleField = cc.Layer.extend({
 			var enemy = new Card();
 			enemy.setData(this.data.enemies[i])
 			this.enemy_pos[i].addChild(enemy);
+			
+			this.enemies.push(enemy);
+			enemy.id = i;
 		}
 		
 		//Create player
 		for(i = 0; i < 4; i++){
-			var player = new Card();
-			player.setData(this.data.cards[i]);
-			this.card_pos[i].addChild(player);
+			var card = new Card();
+			card.setData(this.data.cards[i]);
+			this.card_pos[i].addChild(card);
+			
+			this.cards.push(card);
 		}
+	},
+	
+	setFocus: function(enemy){
+		for (var i = 0; i < this.enemies.length; i++) {
+			var en = this.enemies[i];
+			en.setFocus(false);
+		}
+		
+		enemy.setFocus(true);
+		
+		this.selected_enemy = enemy;
 	}
 });

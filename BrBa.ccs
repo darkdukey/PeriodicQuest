@@ -1,9 +1,9 @@
 <Solution>
-  <PropertyGroup Name="BrBa" Version="2.1.0.0" Type="CocosStudio" />
+  <PropertyGroup Name="BrBa" Version="2.1.2.0" Type="CocosStudio" />
   <SolutionFolder>
     <Group ctype="ResourceGroup">
       <RootFolder Name=".">
-        <Project Name="MainScene.csd" />
+        <Project Name="MainScene.csd" Type="Scene" />
         <Folder Name="assets">
           <Folder Name="img">
             <Image Name="buttonDefault.png" />
@@ -14,8 +14,8 @@
             <Image Name="hp_bar.png" />
           </Folder>
         </Folder>
-        <Project Name="GameScene.csd" />
-        <Project Name="Card.csd" />
+        <Project Name="GameScene.csd" Type="Scene" />
+        <Project Name="Card.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

@@ -1,6 +1,20 @@
 <UserData>
-  <OpenedDocuments>
-    <FilePathData Path="MainScene.csd" />
-  </OpenedDocuments>
-  <ActiveDocument Path="MainScene.csd" />
+  <Properties>
+    <Item Key="PackageParamsKey">
+      <Value ctype="PackageParams">
+        <LuaIsEncrypt Value="False" />
+        <LuaEncryptKey Value="" />
+        <LuaEncryptSign Value="" />
+        <Android_PackageName Value="org.cocos.BrBa" />
+        <AndroidkeyStore Value="" />
+        <AndroidVersion Value="" />
+        <iOS_Target Value="BrBa iOS" />
+        <iOS_BundleID Value="iPhone Developer: NiTe Luo (38SE4S3A55)" />
+        <Platform Value="Android" />
+        <PublishSetting Value="Resource" />
+        <FrameworkVersion Value="cocos2d-x-3.4rc1" />
+        <IsDebugKeystore Value="True" />
+      </Value>
+    </Item>
+  </Properties>
 </UserData>
