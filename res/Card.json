@@ -5,12 +5,136 @@
   "Content": {
     "Content": {
       "Animation": {
-        "Duration": 0,
+        "Duration": 30,
         "Speed": 1.0,
-        "Timelines": [],
+        "Timelines": [
+          {
+            "ActionTag": -798426174,
+            "Property": "Position",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 10,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 15,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 20,
+                "ctype": "PointFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 30,
+                "ctype": "PointFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -798426174,
+            "Property": "Scale",
+            "Frames": [
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 0,
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.1,
+                "Y": 1.1,
+                "FrameIndex": 10,
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.3,
+                "Y": 1.3,
+                "FrameIndex": 15,
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.1,
+                "Y": 1.1,
+                "FrameIndex": 20,
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 1.0,
+                "Y": 1.0,
+                "FrameIndex": 30,
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          },
+          {
+            "ActionTag": -798426174,
+            "Property": "RotationSkew",
+            "Frames": [
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 0,
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 10,
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 15,
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 20,
+                "ctype": "ScaleValueFrameData"
+              },
+              {
+                "X": 0.0,
+                "Y": 0.0,
+                "FrameIndex": 30,
+                "ctype": "ScaleValueFrameData"
+              }
+            ],
+            "ctype": "TimelineData"
+          }
+        ],
         "ctype": "TimelineActionData"
       },
-      "AnimationList": [],
+      "AnimationList": [
+        {
+          "Name": "attack",
+          "StartIndex": 0,
+          "EndIndex": 30,
+          "RenderColor": {
+            "A": 150,
+            "R": 244,
+            "G": 164,
+            "B": 96
+          }
+        }
+      ],
       "ObjectData": {
         "Tag": 10,
         "PrePosition": {
@@ -23,11 +147,7 @@
         },
         "Children": [
           {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "assets/img/tile_highlight.png"
-            },
-            "Tag": 36,
+            "Tag": 28,
             "PrePosition": {
               "X": 0.0,
               "Y": 0.0
@@ -36,277 +156,312 @@
               "X": 0.0,
               "Y": 0.0
             },
-            "LeftMargin": -59.9999,
-            "RightMargin": -60.0001,
-            "TopMargin": -60.0,
-            "BottomMargin": -60.0,
-            "ActionTag": 39276593,
+            "Children": [
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "assets/img/tile_normal.png"
+                },
+                "Tag": 11,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -60.0,
+                "RightMargin": -60.0,
+                "TopMargin": -60.0,
+                "BottomMargin": -60.0,
+                "ActionTag": 776491498,
+                "Position": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 120.0,
+                  "Y": 120.0
+                },
+                "FrameEvent": "",
+                "Name": "bkg_normal",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "assets/img/tile_highlight.png"
+                },
+                "Tag": 36,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -59.9999,
+                "RightMargin": -60.0001,
+                "TopMargin": -60.0,
+                "BottomMargin": -60.0,
+                "ActionTag": 39276593,
+                "Position": {
+                  "X": 0.0001,
+                  "Y": 0.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 120.0,
+                  "Y": 120.0
+                },
+                "VisibleForFrame": false,
+                "FrameEvent": "",
+                "Name": "bkg_highlight",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "FileData": {
+                  "Type": "Normal",
+                  "Path": "assets/img/name_bkg.png"
+                },
+                "Tag": 15,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -48.9114,
+                "RightMargin": -50.0886,
+                "TopMargin": -20.6162,
+                "BottomMargin": -28.3838,
+                "ActionTag": 1318852081,
+                "Position": {
+                  "X": 0.5886,
+                  "Y": -3.8838
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 99.0,
+                  "Y": 49.0
+                },
+                "FrameEvent": "",
+                "Name": "name_bkg",
+                "ctype": "SpriteObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 36,
+                "LabelText": "Na",
+                "Tag": 12,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -25.3121,
+                "RightMargin": -26.6879,
+                "TopMargin": -17.1044,
+                "BottomMargin": -24.8956,
+                "ActionTag": -920951506,
+                "Position": {
+                  "X": 0.6879,
+                  "Y": -3.8956
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 52.0,
+                  "Y": 42.0
+                },
+                "FrameEvent": "",
+                "Name": "name",
+                "ctype": "TextObjectData"
+              },
+              {
+                "ProgressInfo": 100,
+                "ImageFileData": {
+                  "Type": "Normal",
+                  "Path": "assets/img/hp_bar.png"
+                },
+                "Tag": 16,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -54.2992,
+                "RightMargin": -55.7008,
+                "TopMargin": 43.8559,
+                "BottomMargin": -51.8559,
+                "ActionTag": 622467775,
+                "Position": {
+                  "X": 0.7008,
+                  "Y": -47.8559
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 110.0,
+                  "Y": 8.0
+                },
+                "FrameEvent": "",
+                "Name": "hp",
+                "ctype": "LoadingBarObjectData"
+              },
+              {
+                "IsCustomSize": true,
+                "FontSize": 14,
+                "LabelText": "LV",
+                "Tag": 17,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -50.6179,
+                "RightMargin": 30.6179,
+                "TopMargin": -47.9689,
+                "BottomMargin": 27.9689,
+                "ActionTag": -1809519898,
+                "Position": {
+                  "X": -40.6179,
+                  "Y": 37.9689
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {
+                  "R": 137,
+                  "G": 137,
+                  "B": 137
+                },
+                "Size": {
+                  "X": 20.0,
+                  "Y": 20.0
+                },
+                "FrameEvent": "",
+                "Name": "level_label",
+                "ctype": "TextObjectData"
+              },
+              {
+                "FontSize": 14,
+                "LabelText": "1",
+                "Tag": 18,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "LeftMargin": -29.3446,
+                "RightMargin": 22.3446,
+                "TopMargin": -47.9689,
+                "BottomMargin": 27.9689,
+                "ActionTag": -2003017505,
+                "Position": {
+                  "X": -25.8446,
+                  "Y": 37.9689
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {
+                  "R": 137,
+                  "G": 137,
+                  "B": 137
+                },
+                "Size": {
+                  "X": 7.0,
+                  "Y": 20.0
+                },
+                "FrameEvent": "",
+                "Name": "level",
+                "ctype": "TextObjectData"
+              }
+            ],
+            "ActionTag": -798426174,
             "Position": {
-              "X": 0.0001,
+              "X": 0.0,
               "Y": 0.0
             },
             "Scale": {
               "ScaleX": 1.0,
               "ScaleY": 1.0
             },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
+            "AnchorPoint": {},
             "CColor": {},
             "Size": {
-              "X": 120.0,
-              "Y": 120.0
-            },
-            "VisibleForFrame": false,
-            "FrameEvent": "",
-            "Name": "bkg_highlight",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "assets/img/tile_normal.png"
-            },
-            "Tag": 11,
-            "PrePosition": {
               "X": 0.0,
               "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -60.0,
-            "RightMargin": -60.0,
-            "TopMargin": -60.0,
-            "BottomMargin": -60.0,
-            "ActionTag": 776491498,
-            "Position": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "CColor": {},
-            "Size": {
-              "X": 120.0,
-              "Y": 120.0
             },
             "FrameEvent": "",
-            "Name": "bkg_normal",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "FileData": {
-              "Type": "Normal",
-              "Path": "assets/img/name_bkg.png"
-            },
-            "Tag": 15,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -48.9114,
-            "RightMargin": -50.0886,
-            "TopMargin": -20.6162,
-            "BottomMargin": -28.3838,
-            "ActionTag": 1318852081,
-            "Position": {
-              "X": 0.5886,
-              "Y": -3.8838
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "CColor": {},
-            "Size": {
-              "X": 99.0,
-              "Y": 49.0
-            },
-            "FrameEvent": "",
-            "Name": "name_bkg",
-            "ctype": "SpriteObjectData"
-          },
-          {
-            "IsCustomSize": true,
-            "FontSize": 36,
-            "LabelText": "Na",
-            "Tag": 12,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -25.3121,
-            "RightMargin": -26.6879,
-            "TopMargin": -17.1044,
-            "BottomMargin": -24.8956,
-            "ActionTag": -920951506,
-            "Position": {
-              "X": 0.6879,
-              "Y": -3.8956
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "CColor": {},
-            "Size": {
-              "X": 52.0,
-              "Y": 42.0
-            },
-            "FrameEvent": "",
-            "Name": "name",
-            "ctype": "TextObjectData"
-          },
-          {
-            "ProgressInfo": 100,
-            "ImageFileData": {
-              "Type": "Normal",
-              "Path": "assets/img/hp_bar.png"
-            },
-            "Tag": 16,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -54.2992,
-            "RightMargin": -55.7008,
-            "TopMargin": 43.8559,
-            "BottomMargin": -51.8559,
-            "ActionTag": 622467775,
-            "Position": {
-              "X": 0.7008,
-              "Y": -47.8559
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "CColor": {},
-            "Size": {
-              "X": 110.0,
-              "Y": 8.0
-            },
-            "FrameEvent": "",
-            "Name": "hp",
-            "ctype": "LoadingBarObjectData"
-          },
-          {
-            "IsCustomSize": true,
-            "FontSize": 14,
-            "LabelText": "LV",
-            "Tag": 17,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -50.6179,
-            "RightMargin": 30.6179,
-            "TopMargin": -47.9689,
-            "BottomMargin": 27.9689,
-            "ActionTag": -1809519898,
-            "Position": {
-              "X": -40.6179,
-              "Y": 37.9689
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "CColor": {
-              "R": 137,
-              "G": 137,
-              "B": 137
-            },
-            "Size": {
-              "X": 20.0,
-              "Y": 20.0
-            },
-            "FrameEvent": "",
-            "Name": "level_label",
-            "ctype": "TextObjectData"
-          },
-          {
-            "FontSize": 14,
-            "LabelText": "1",
-            "Tag": 18,
-            "PrePosition": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "PreSize": {
-              "X": 0.0,
-              "Y": 0.0
-            },
-            "LeftMargin": -29.3446,
-            "RightMargin": 22.3446,
-            "TopMargin": -47.9689,
-            "BottomMargin": 27.9689,
-            "ActionTag": -2003017505,
-            "Position": {
-              "X": -25.8446,
-              "Y": 37.9689
-            },
-            "Scale": {
-              "ScaleX": 1.0,
-              "ScaleY": 1.0
-            },
-            "AnchorPoint": {
-              "ScaleX": 0.5,
-              "ScaleY": 0.5
-            },
-            "CColor": {
-              "R": 137,
-              "G": 137,
-              "B": 137
-            },
-            "Size": {
-              "X": 7.0,
-              "Y": 20.0
-            },
-            "FrameEvent": "",
-            "Name": "level",
-            "ctype": "TextObjectData"
+            "Name": "root",
+            "ctype": "SingleNodeObjectData"
           }
         ],
         "Position": {

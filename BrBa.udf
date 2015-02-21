@@ -1,4 +1,11 @@
 <UserData>
+  <OpenedDocuments>
+    <FilePathData Path="MainScene.csd" />
+    <FilePathData Path="GameScene.csd" />
+    <FilePathData Path="Card.csd" />
+    <FilePathData Path="TestScene.csd" />
+  </OpenedDocuments>
+  <ActiveDocument Path="TestScene.csd" />
   <Properties>
     <Item Key="PackageParamsKey">
       <Value ctype="PackageParams">

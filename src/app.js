@@ -22,6 +22,7 @@ var HelloWorldLayer = cc.Layer.extend({
         if (btn) {
         	btn.addClickEventListener(function(){
                 var scene = new GameScene();
+//        		var scene = new TestScene();
                 cc.director.runScene(new cc.TransitionFade(1, scene));
         	});
 		}

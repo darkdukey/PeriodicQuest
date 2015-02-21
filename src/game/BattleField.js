@@ -24,7 +24,7 @@ var BattleField = cc.Layer.extend({
 			"level":1,
 			"attack":20,
 			"hp_max":200,
-			"hp_curr":200			
+			"hp_curr":200
 		},{
 			"name":"N",
 			"level":1,
@@ -50,7 +50,7 @@ var BattleField = cc.Layer.extend({
 			"level":1,
 			"attack":20,
 			"hp_max":200,
-			"hp_curr":200			
+			"hp_curr":200
 		},{
 			"name":"N",
 			"level":1,
@@ -59,12 +59,12 @@ var BattleField = cc.Layer.extend({
 			"hp_curr":400
 		}]
 	},
-	
-	
+
+
 	ctor:function(node){
 		this._super();
-		self = this;
-		
+		var self = this;
+
 		if ("mouse" in cc.sys.capabilities) {
 			cc.eventManager.addListener({
 				event: cc.EventListener.MOUSE,
@@ -76,6 +76,14 @@ var BattleField = cc.Layer.extend({
 							var enemy = self.enemies[i];
 							if(hitTest(enemy.bkg_normal, point)){
 								self.setFocus(enemy);
+								break;
+							}
+						}
+
+						for (var i = 0; i < self.cards.length; i++) {
+							var card = self.cards[i];
+							if(hitTest(card.bkg_normal, point)){
+								card.attack(self.selected_enemy);
 								break;
 							}
 						}
@@ -111,7 +119,7 @@ var BattleField = cc.Layer.extend({
 			, this);
 		}
 	},
-	
+
 	setNode: function(node){
 		this.node = node;
 		//Load battle field data
@@ -128,29 +136,32 @@ var BattleField = cc.Layer.extend({
 			var enemy = new Card();
 			enemy.setData(this.data.enemies[i])
 			this.enemy_pos[i].addChild(enemy);
-			
+
 			this.enemies.push(enemy);
 			enemy.id = i;
 		}
-		
+
+		this.selected_enemy = this.enemies[0];
+		this.selected_enemy.setFocus(true);
+
 		//Create player
 		for(i = 0; i < 4; i++){
 			var card = new Card();
 			card.setData(this.data.cards[i]);
 			this.card_pos[i].addChild(card);
-			
+
 			this.cards.push(card);
 		}
 	},
-	
+
 	setFocus: function(enemy){
 		for (var i = 0; i < this.enemies.length; i++) {
 			var en = this.enemies[i];
 			en.setFocus(false);
 		}
-		
+
 		enemy.setFocus(true);
-		
+
 		this.selected_enemy = enemy;
 	}
 });

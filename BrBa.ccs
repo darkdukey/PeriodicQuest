@@ -13,9 +13,13 @@
             <Image Name="name_bkg.png" />
             <Image Name="hp_bar.png" />
           </Folder>
+          <Folder Name="particle">
+            <PlistParticleFile Name="attack.plist" />
+          </Folder>
         </Folder>
         <Project Name="GameScene.csd" Type="Scene" />
         <Project Name="Card.csd" Type="Node" />
+        <Project Name="TestScene.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>
