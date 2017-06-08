@@ -18,9 +18,27 @@
         <iOS_Target Value="BrBa iOS" />
         <iOS_BundleID Value="iPhone Developer: NiTe Luo (38SE4S3A55)" />
         <Platform Value="Android" />
-        <PublishSetting Value="Resource" />
         <FrameworkVersion Value="cocos2d-x-3.4rc1" />
         <IsDebugKeystore Value="True" />
+        <EnableSourceMap Value="False" />
+        <EnableHTML5Advanced Value="False" />
+      </Value>
+    </Item>
+    <Item Key="CocosRecentOperation">
+      <Value ctype="CocosRecentOperation">
+        <LastPublishType Value="Resource" />
+        <IsLastPublish Value="True" />
+        <LastRunType Value="Unknown" />
+      </Value>
+    </Item>
+    <Item Key="TabsParamsKey">
+      <Value ctype="TabsInfo">
+        <OpenedDocuments>
+          <FilePathData Path="Card.csd" />
+          <FilePathData Path="GameScene.csd" />
+          <FilePathData Path="MainScene.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="MainScene.csd" />
       </Value>
     </Item>
   </Properties>
